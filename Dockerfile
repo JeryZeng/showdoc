@@ -13,7 +13,7 @@ RUN  \
 
 RUN chmod -R 777 /var/www/html/
 
-EXPOSE /var/www/html/Sqlite/
-EXPOSE /var/www/html/Public/Uploads/
+VOLUME /var/www/html/Sqlite/
+VOLUME /var/www/html/Public/Uploads/
 
 CMD ["apache2-foreground"]
